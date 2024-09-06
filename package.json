@@ -2,14 +2,20 @@
   "name": "learnbackend",
   "version": "1.0.0",
   "main": "index.js",
+  "type":"module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "author": "udaybisht",
   "license": "ISC",
   "description": "",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "nodemon": "^3.1.4"
+  },
   "devDependencies": {
-    "nodemon": "^3.1.4",
-    "prettier": "^3.3.3"
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.6.1"
   }
 }
